@@ -141,9 +141,19 @@ def merge_airbnb_files(data_directory="data/", output_file="airbnb_complete.csv"
             else:  # Excel
                 df = pd.read_excel(file_path)
             
-            # Add column with filename/city
+            # Extract city name from filename (everything before '_airbnb')
             file_name = Path(file_path).stem
-            df['city'] = file_name.replace('_', ' ').replace('-', ' ').title()
+
+            # Extract city name: take everything before '_airbnb'
+            if '_airbnb' in file_name.lower():
+                city_name = file_name.split('_airbnb')[0]
+            else:
+                # Fallback: take everything before the first underscore, or full name if no underscore
+                city_name = file_name.split('_')[0] if '_' in file_name else file_name
+
+            # Clean and format city name
+            city_name = city_name.replace('_', ' ').replace('-', ' ').title()
+            df['city'] = city_name
             
             dataframes_list.append(df)
             total_raw_rows += len(df)
