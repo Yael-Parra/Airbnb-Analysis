@@ -29,7 +29,7 @@ Los datos fueron fusionados a partir de archivos CSV individuales por ciudad med
 | `host_name`                      | 0.32%           | Limpieza + "Unknown"      | ✅                   |
 | `price_USD`                      | Nuevo campo     | Unificación de precios    | ✅                   |
 
-> El conjunto está limpio a nivel sintáctico y estructural, pero se recomienda validación semántica (disponibilidad y geolocalización).
+> El conjunto queda limpio a nivel sintáctico y estructural.
 
 ### <span style="color: #FF5A5F99">2. Análisis Estadístico y Descriptivo</span>
 
@@ -38,6 +38,14 @@ Se realizaron análisis **univariados**, **bivariados** y **multivariados** sobr
 - Distribuciones de precios por ciudad y tipo de alojamiento.
 - Relación entre número de reviews y disponibilidad.
 - Comparativas entre barrios y ciudades.
+
+Gracias al **análisis estadístico**, se encontraron los siguientes hallazgos:
+
+- **Identificadores irrelevantes**: `id_announcement` y `host_id` no aportan valor predictivo (r ≈ 0); se descartan.
+- **Ubicación**: el principal determinante de precio; las zonas centrales/turísticas marcan tarifas +25 % vs. promedio.
+- **Reputación**: anuncios con alta frecuencia de reseñas permiten fijar precios premium.
+- **Distribución de precios**: fuertemente sesgada; requiere transformaciones previas al modelado.
+- **Interacciones categóricas**: tipo de propiedad y barrio modulan de forma significativa la tarifa.
 
 Las herramientas utilizadas incluyen **Pandas**, **Seaborn**, **Matplotlib**, **NumPy**, **SciPy** y **Scikit-learn**.
 
