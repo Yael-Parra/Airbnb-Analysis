@@ -6,7 +6,7 @@
 
 ## <span style="color: #FF5A5F">Descripción del Proyecto</span>
 
-Este repositorio contiene un análisis exploratorio, estadístico e inferencial sobre más de **220,000 registros de alojamientos en Airbnb**, correspondientes al período 2010-2020, distribuidos en seis ciudades: **Madrid, Milán, Londres, Nueva York, Sídney y Tokio**. El objetivo del análisis es entender cómo varían los precios, la disponibilidad y otros factores clave del mercado de alquileres a corto plazo, tanto para **viajeros** como para **inversionistas potenciales**.
+Este repositorio contiene un análisis exploratorio, estadístico e inferencial sobre más de **220,000 registros de alojamientos en Airbnb**, correspondientes al período 2010-2020, distribuidos en seis ciudades: **Madrid, Milán, Londres, Nueva York, Sidney y Tokio**. El objetivo del análisis es entender cómo varían los precios, la disponibilidad y otros factores clave del mercado de alquileres a corto plazo, tanto para **viajeros** como para **inversionistas potenciales**.
 
 ## <span style="color: #FF5A5F">Metodología de Análisis</span>
 
@@ -116,3 +116,12 @@ Proporciona insights valiosos para:
 - Viajeros que desean entender patrones de mercado
 - Investigadores interesados en economía colaborativa
 - Tomadores de decisiones en turismo urbano
+
+## <h2 style="color:#FF5A5F; opacity:0.85;">👥 Colaboradoras</h2>
+
+Este proyecto fue desarrollado por:
+
+- [Abigail Masapanta](https://github.com/abbyenredes)
+- [Andrea Alonso](https://github.com/andalons)
+- [Andreina Suescum](https://github.com/mariasuescum)
+- [Yael Parra](https://github.com/Yael-Parra)
