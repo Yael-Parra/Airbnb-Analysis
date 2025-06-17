@@ -125,7 +125,7 @@ Proporciona insights valiosos para:
 - Investigadores interesados en economía colaborativa
 - Tomadores de decisiones en turismo urbano
 
-## <h2 style="color:#FF5A5F; opacity:0.85;">👥 Colaboradoras</h2>
+## <h2 style="color:#FF5A5F; opacity:0.85;">Colaboradoras</h2>
 
 Este proyecto fue desarrollado por:
 
