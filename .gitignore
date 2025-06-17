@@ -1,0 +1,33 @@
+.venv
+.python-version
+pyproject.toml
+uv.lock
+
+# Data files (too large for Git)
+data/
+*.csv
+*.xlsx
+*.xls
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
