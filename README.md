@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="img/logo1.png" alt="Logo 1" width="200"/>
+  <img src="img/logo2.png" alt="Logo 1" width="200"/>
 </p>
 
 # <span style="color: #FF5A5F">Análisis Integral de Datos de Airbnb</span>
