@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    ports:
+      - "8080:80"
+    container_name: airbnb-dashboard
+    restart: unless-stopped
+
+  ngrok:
+    image: ngrok/ngrok:latest
+    container_name: ngrok-tunnel
+    ports:
+    - "4040:4040"
+    restart: unless-stopped
+    command: http web:80
+    environment:
+      - NGROK_AUTHTOKEN=${NGROK_AUTHTOKEN}
