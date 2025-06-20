@@ -90,9 +90,15 @@ Se contrastaron varias hipótesis, especialmente en la ciudad de **Madrid**:
 ## <span style="color: #FF5A5F">Dashboards de Power BI</span>
 
 <p align="center">
-  <img src="img/dashboard1.png" alt="Dashboard General" width="700"/>
+  <table>
+    <tr>
+      <td><img src="img/dashboard1.png" alt="Dashboard General" height="400"/></td>
+      <td><img src="img/Dashboard-movil.gif" alt="Vista móvil" height="400"/></td>
+    </tr>
+  </table>
 </p>
-Se desarrollaron dashboards interactivos  en Power BI que incluyen:
+
+Se desarrollaron dashboards interactivos en Power BI que incluyen:
 
 - Datos globales comparativos entre ciudades.
 - Análisis individual por ciudad (filtros por tipo, zona, precio...).
