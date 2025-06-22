@@ -1,141 +1,144 @@
 <p align="center">
-  <img src="img/logo2.png" alt="Logo 1" width="200"/>
+  <img src="img/logo2.png" alt="Airbnb Logo" width="200"/>
 </p>
 
-# <span style="color: #FF5A5F">Análisis Integral de Datos de Airbnb</span>
+<h1 align="center" style="color: #FF5A5F;">Comprehensive Airbnb Market Analysis</h1>
 
-## <span style="color: #FF5A5F">Descripción del Proyecto</span>
+<p align="center">
+  Global & Madrid Focus • Business-Oriented Insights • Free Deployment via Docker & Power BI
+</p>
 
-Este repositorio contiene un análisis exploratorio, estadístico e inferencial sobre más de **220,000 registros de alojamientos en Airbnb**, correspondientes al período 2010-2020, distribuidos en seis ciudades: **Madrid, Milán, Londres, Nueva York, Sidney y Tokio**. El objetivo del análisis es entender cómo varían los precios, la disponibilidad y otros factores clave del mercado de alquileres a corto plazo, tanto para **viajeros** como para **inversionistas potenciales**.
+---
 
-## <span style="color: #FF5A5F">Metodología de Análisis</span>
+## 🧭 Table of Contents
 
-### <span style="color: #FF5A5F99">1. Limpieza y Preparación de Datos</span>
+- [📌 Project Overview](#-project-overview)
+- [📊 Key Insights](#-key-insights)
+- [🎯 Strategic Takeaways](#-strategic-takeaways)
+- [🛠️ Tools & Technologies](#-tools-&-technologies)
+- [📁 Project Structure](#-project-structure)
+- [🌍 Dashboard Deployment](#-dashboard-deployment)
+- [⚠️ Data Reliability](#️-data-reliability)
+- [👩‍💻 Contributors](#-contributors)
 
-Los datos fueron fusionados a partir de archivos CSV individuales por ciudad mediante un pipeline automatizado. La limpieza incluyó:
+---
 
-- **Imputación de valores nulos**, con estrategias específicas por columna (ver tabla abajo).
-- **Conversión de precios a dólares estadounidenses (USD)** usando un tipo de cambio fijo.
-- **Normalización de texto** en columnas como `host_name`, `neighbourhood`, y `city`.
-- **Eliminación o transformación de variables poco fiables** (`price`, `reviews_per_month`, etc.).
+## 📌 Project Overview
 
-| Columna                          | % Nulos Inicial | Tratamiento               | Notas                |
-| -------------------------------- | --------------- | ------------------------- | -------------------- |
-| `neighbourhood_group`            | 68.86%          | Imputado como "Unknown"   | ⚠️ Poco fiable       |
-| `last_review`                    | 30.74%          | Lógica + fallback         | ✅ Usar con cautela  |
-| `reviews_per_month`              | 24.71%          | Imputado con 0.0 y lógica | ⚠️ Señal débil       |
-| `availability_365`               | 5.21%           | Media global para Tokio   | ✅ Usar con cuidado  |
-| `calculated_host_listings_count` | 5.21%           | Llenado con 0 en Tokio    | ⚠️ Considerar aparte |
-| `host_name`                      | 0.32%           | Limpieza + "Unknown"      | ✅                   |
-| `price_USD`                      | Nuevo campo     | Unificación de precios    | ✅                   |
+This repository presents an executive-level analysis of over **220,000 Airbnb listings** from **six global cities** (Madrid, Milan, London, New York, Sydney, Tokyo) spanning **2010–2020**.  
+The goal: to extract actionable insights for **hosts, guests, and investors** by exploring pricing, availability, demand signals, and property types.
 
-> El conjunto queda limpio a nivel sintáctico y estructural.
+The final output includes a **Power BI dashboard**, **free-to-deploy with Docker & Nginx**, designed to make exploration intuitive and scalable.
 
-### <span style="color: #FF5A5F99">2. Análisis Estadístico y Descriptivo</span>
+---
 
-Se realizaron análisis **univariados**, **bivariados** y **multivariados** sobre las principales variables:
+## 📊 Key Insights
 
-- Distribuciones de precios por ciudad y tipo de alojamiento.
-- Relación entre número de reviews y disponibilidad.
-- Comparativas entre barrios y ciudades.
+### 💡 Market Dynamics
 
-Gracias al **análisis estadístico**, se encontraron los siguientes hallazgos:
+- **Availability Drives Price**  
+  Listings with >180 days availability are priced higher — hosts favor revenue per stay over occupancy volume.
 
-- **Identificadores irrelevantes**: `id_announcement` y `host_id` no aportan valor predictivo (r ≈ 0); se descartan.
-- **Ubicación**: el principal determinante de precio; las zonas centrales/turísticas marcan tarifas +25 % vs. promedio.
-- **Reputación**: anuncios con alta frecuencia de reseñas permiten fijar precios premium.
-- **Distribución de precios**: fuertemente sesgada; requiere transformaciones previas al modelado.
-- **Interacciones categóricas**: tipo de propiedad y barrio modulan de forma significativa la tarifa.
+- **Location = Value**  
+  In Madrid, areas like **Retiro**, **Centro**, and **Arganzuela** command the highest prices. **Chamartín** and **Latina** are more budget-friendly.
 
-Las herramientas utilizadas incluyen **Pandas**, **Seaborn**, **Matplotlib**, **NumPy**, **SciPy** y **Scikit-learn**.
+- **Type Influences Revenue**  
+  Hotel rooms top the price ladder, followed by entire homes. Private and shared rooms are significantly cheaper.
 
-### <span style="color: #FF5A5F99">3. Validación de Hipótesis</span>
+- **Popularity ≠ Premium**  
+  More reviews don’t mean higher prices. Affordable listings often have higher review counts — popularity stems from accessibility, not exclusivity.
 
-Se contrastaron varias hipótesis, especialmente en la ciudad de **Madrid**:
+### 🌍 Global Perspective
 
-- **H1: Los alojamientos con alta disponibilidad tienen mayor precio promedio.**  
-  ✅ Aceptada parcialmente: alta disponibilidad (≥180 días) se asocia con precios más altos.
+- **Average Price:** ~$158 USD, with wide dispersion
+- **Most Listings:** London leads volume; Tokyo is the most affordable
+- **New York:** Higher prices, more reviews
+- **Private Rooms:** High review rates, budget-friendly
+- **Hotels:** Expensive but not necessarily well-reviewed
 
-- **H2: Existen diferencias de precio entre barrios.**  
-  ✅ Aceptada completamente: barrios como Retiro y Centro son más caros.
+---
 
-- **H3: Los alojamientos con más reviews son más caros.**  
-  ❌ Rechazada: no hay evidencia significativa.
+## 🎯 Strategic Takeaways
 
-- **H4: El tipo de alojamiento influye en el precio.**  
-  ✅ Aceptada completamente: los hoteles son los más caros.
+- **Hosts:** Price higher in premium locations and offer entire units for better ROI.
+- **Guests:** Choose shared/private rooms and non-central zones for better value.
+- **Investors:** Target full-home listings in high-demand neighborhoods for maximum yield.
 
-**Implicaciones:**
+---
 
-- **Para anfitriones**: optimización de precios por zona y tipo.
-- **Para huéspedes**: maximizar valor al comparar zonas.
-- **Para inversores**: identificar oportunidades según rentabilidad y ubicación.
+## 🛠️ Tools & Technologies
 
-## <span style="color: #FF5A5F">Herramientas y Tecnologías</span>
+### 🔎 Data Analysis & Cleaning
 
-### <span style="color: #FF5A5F99">Análisis de Datos</span>
+![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/-Pandas-150458?logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/-NumPy-013243?logo=numpy&logoColor=white)
+![SciPy](https://img.shields.io/badge/-SciPy-8CAAE6?logo=scipy&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/-Scikit--learn-F7931E?logo=scikit-learn&logoColor=white)
 
-- **Python**: Lenguaje principal de análisis
-- **Pandas**: Manipulación y análisis de datos
-- **NumPy**: Operaciones numéricas
-- **SciPy**: Tests estadísticos avanzados
-- **Scikit-learn**: Algoritmos de machine learning
+### 📈 Visualization & Reporting
 
-### <span style="color: #FF5A5F99">Visualización</span>
+![Matplotlib](https://img.shields.io/badge/-Matplotlib-11557C?logo=matplotlib&logoColor=white)
+![Seaborn](https://img.shields.io/badge/-Seaborn-2D3E50?logo=seaborn&logoColor=white)
+![Power BI](https://img.shields.io/badge/-Power%20BI-F2C811?logo=powerbi&logoColor=black)
 
-- **Matplotlib**: Gráficos estáticos
-- **Seaborn**: Visualizaciones estadísticas
-- **Power BI**: Dashboards interactivos
+### 🐳 Deployment
 
-## <span style="color: #FF5A5F">Dashboards de Power BI</span>
+![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white)
+![Nginx](https://img.shields.io/badge/-Nginx-009639?logo=nginx&logoColor=white)
+- Interactive dashboard exported as **HTML from Power BI**
+- Served via **Dockerized Nginx**
+- 100% free to deploy locally or in cloud with no Power BI license required
+
+---
+
+## 📁 Project Structure
+
+```
+airbnb-analysis/
+├── data/ # Raw CSVs per city
+├── processed_data/ # Cleaned & merged datasets
+├── eda/ # Notebooks with core analysis
+├── scripts/ # Data merging pipeline
+├── img/ # Dashboards & branding
+├── airbnb dashboard/ # Exported Power BI HTML for deployment
+└── README.md
+
+```
+
+---
+
+## 🌍 Dashboard Deployment
 
 <p align="center">
   <table>
     <tr>
-      <td><img src="img/dashboard1.png" alt="Dashboard General" height="400"/></td>
-      <td><img src="img/Dashboard-movil.gif" alt="Vista móvil" height="400"/></td>
+      <td><img src="img/dashboard1.png" alt="Main Dashboard" height="400"/></td>
+      <td><img src="img/Dashboard-movil.gif" alt="Mobile View" height="400"/></td>
     </tr>
   </table>
 </p>
 
-Se desarrollaron dashboards interactivos en Power BI que incluyen:
+- Dashboard features filters by **city**, **neighborhood**, **accommodation type**, **price ranges**, and **availability**
+- Mobile-optimized, highly visual, business-ready
 
-- Datos globales comparativos entre ciudades.
-- Análisis individual por ciudad (filtros por tipo, zona, precio...).
-- Tendencias de disponibilidad, densidad de alojamientos y precios medios.
+> 🧪 `.pbix` and exported HTML included — no Power BI service needed.
 
-> 📁 El archivo `.pbix` se encuentra incluido en el repositorio.
+---
 
-## <span style="color: #FF5A5F">Estructura del Proyecto</span>
+## ⚠️ Data Reliability
 
-```
-airbnb-analysis/
-├── data/ # Todos los csv de las diferentes ciudades + archivo comprimido del clean data
-├── eda/ # Diferentes notebooks con limpieza, análisis e hipótesis
-├── img/ # Logos y dashboards
-├── processed_data/ # Datos tras ejecutar el script del data merger
-├── scripts/ # Data merger
-└── README.md
-```
+The dataset has undergone **extensive cleaning**: missing data handling, price normalization, text unification, and suspicious entry filtering.  
+However, variables like `last_review` and some geo fields are partially imputed — interpret with light caution.
 
-## <span style="color: #FF5A5F">Resultados y Hallazgos</span>
+---
 
-Este análisis permite una visión rica y detallada de cómo funcionan los alquileres de corto plazo en seis grandes ciudades. La combinación de herramientas estadísticas, visuales y de negocio lo hace útil tanto para análisis académico como para toma de decisiones en turismo y real estate.
+## 👩‍💻 Contributors
 
-Los resultados detallados del análisis, incluyendo validación de hipótesis y insights principales, se encuentran documentados en los notebooks de análisis y reportes específicos del proyecto.
-
-Proporciona insights valiosos para:
-
-- Anfitriones que buscan optimizar sus precios
-- Viajeros que desean entender patrones de mercado
-- Investigadores interesados en economía colaborativa
-- Tomadores de decisiones en turismo urbano
-
-## <h2 style="color:#FF5A5F; opacity:0.85;">Colaboradoras</h2>
-
-Este proyecto fue desarrollado por:
+This project was developed by:
 
 - [Abigail Masapanta](https://github.com/abbyenredes)
 - [Andrea Alonso](https://github.com/andalons)
 - [Andreina Suescum](https://github.com/mariasuescum)
 - [Yael Parra](https://github.com/Yael-Parra)
+
