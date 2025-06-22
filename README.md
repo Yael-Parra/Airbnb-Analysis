@@ -97,14 +97,14 @@ The final output includes a **Power BI dashboard**, **free-to-deploy with Docker
 In order for you to be able to check the dashboard in the web:
 - Clone the repository in your device
 ```
-git clone # Better go check at the link
+git clone https://github.com/Yael-Parra/Airbnb-Analysis.git                 # Better go check at the link
 cd Airbnb-Analysis
 ```
-- You need to have Dcoker
+- You need to have Docker
 - You need to have a Nginx account
   - Then you need to put your token as in the .env file example
     
-- Now, run as follows:
+- Now, run as follows from the root of the project:
 ```
 docker-compose --env-file .env up --build      # This is to build it
 docker-compose down --rmi all                  # This is to eliminate it
