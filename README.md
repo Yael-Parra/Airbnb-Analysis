@@ -16,6 +16,7 @@
 - [📊 Key Insights](#-key-insights)
 - [🎯 Strategic Takeaways](#-strategic-takeaways)
 - [🛠️ Tools & Technologies](#-tools-&-technologies)
+- [✍ Instructions](#-instructions)
 - [📁 Project Structure](#-project-structure)
 - [🌍 Dashboard Deployment](#-dashboard-deployment)
 - [⚠️ Data Reliability](#️-data-reliability)
@@ -89,6 +90,20 @@ The final output includes a **Power BI dashboard**, **free-to-deploy with Docker
 - Interactive dashboard exported as **HTML from Power BI**
 - Served via **Dockerized Nginx**
 - 100% free to deploy locally or in cloud with no Power BI license required
+
+---
+## ✍ Instructions
+
+In order for you to be able to check the dashboard in the web:
+- You need to have Dcoker
+- You need to have a Nginx account
+  - Then you need to put your token as in the .env file example
+    
+- Now, run as follows:
+```
+docker-compose --env-file .env up --build      # This is to build it
+docker-compose down --rmi all                  # This is to eliminate it
+```
 
 ---
 
