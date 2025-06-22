@@ -135,13 +135,54 @@ The dataset has undergone **extensive cleaning**: missing data handling, price n
 However, variables like `last_review` and some geo fields are partially imputed — interpret with light caution.
 
 ---
-
 ## 👩‍💻 Contributors
 
-This project was developed by:
+We are a team of data-driven women passionate about transforming raw data into real-world insights.  
+We’re open to **collaborations**, **freelance opportunities**, or simply connecting to share ideas and perspectives.  
+Let’s build something amazing together! 🚀💬
 
-- Abigail Masapanta [GitHub](https://github.com/abbyenredes) [LinkedIn](https://www.linkedin.com/in/abigail-masapanta-romero/)
-- Andrea Alonso [GitHub](https://github.com/andalons) [LinkedIn](https://www.linkedin.com/in/andreaalonsocor/)
-- Andreina Suescum [GitHub](https://github.com/mariasuescum) [LinkedIn](https://www.linkedin.com/in/andreina-suescum/)
-- Yael Parra [GitHub](https://github.com/Yael-Parra) [LinkedIn](https://www.linkedin.com/in/yael-parra/)
+- **Abigail Masapanta**  
+  <p align="left">
+    <a href="https://github.com/abbyenredes">
+      <img src="https://img.shields.io/badge/GitHub-%40abbyenredes-f56a79?style=flat&logo=github&logoColor=white" />
+    </a>
+    <a href="https://www.linkedin.com/in/abigailmasapanta/">
+      <img src="https://img.shields.io/badge/LinkedIn-Abigail%20Masapanta-0A66C2?style=flat&logo=linkedin&logoColor=white" />
+    </a>
+  </p>
+
+- **Andrea Alonso**  
+  <p align="left">
+    <a href="https://github.com/andalons">
+      <img src="https://img.shields.io/badge/GitHub-%40andalons-f56a79?style=flat&logo=github&logoColor=white" />
+    </a>
+    <a href="https://www.linkedin.com/in/andrea-alonso-g/">
+      <img src="https://img.shields.io/badge/LinkedIn-Andrea%20Alonso-0A66C2?style=flat&logo=linkedin&logoColor=white" />
+    </a>
+  </p>
+
+- **Andreina Suescum**  
+  <p align="left">
+    <a href="https://github.com/mariasuescum">
+      <img src="https://img.shields.io/badge/GitHub-%40mariasuescum-f56a79?style=flat&logo=github&logoColor=white" />
+    </a>
+    <a href="https://www.linkedin.com/in/andreina-suescum/">
+      <img src="https://img.shields.io/badge/LinkedIn-Andreina%20Suescum-0A66C2?style=flat&logo=linkedin&logoColor=white" />
+    </a>
+  </p>
+
+- **Yael Parra**  
+  <p align="left">
+    <a href="https://github.com/Yael-Parra">
+      <img src="https://img.shields.io/badge/GitHub-%40Yael--Parra-f56a79?style=flat&logo=github&logoColor=white" />
+    </a>
+    <a href="https://www.linkedin.com/in/yael-parra/">
+      <img src="https://img.shields.io/badge/LinkedIn-Yael%20Parra-0A66C2?style=flat&logo=linkedin&logoColor=white" />
+    </a>
+  </p>
+
+---
+
+> 🤝 *Let’s connect and explore data possibilities together. Whether it's a creative project or a bold idea, we’d love to hear from you.*
+
 
