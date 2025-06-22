@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  web:
+    build:
+      context: ./powerbi-web
+      dockerfile: ../Dockerfile
+    container_name: airbnb-dashboard
+    ports:
+      - "8888:80"
+    restart: unless-stopped
+
+  ngrok:
+    image: ngrok/ngrok:latest
+    container_name: ngrok-tunnel
+    ports:
+    - "4040:4040"
+    restart: unless-stopped
+    command: http web:80
+    environment:
+      - NGROK_AUTHTOKEN=${NGROK_AUTHTOKEN}
