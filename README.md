@@ -95,13 +95,16 @@ The final output includes a **Power BI dashboard**, **free-to-deploy with Docker
 ## 📁 Project Structure
 
 ```
-airbnb-analysis/
-├── data/ # Raw CSVs per city
-├── processed_data/ # Cleaned & merged datasets
-├── eda/ # Notebooks with core analysis
-├── scripts/ # Data merging pipeline
-├── img/ # Dashboards & branding
-├── airbnb dashboard/ # Exported Power BI HTML for deployment
+Airbnb-Analysis/
+├── data/                    # Raw CSV files per city
+├── eda/                     # Jupyter notebooks for analysis
+├── img/                     # Visual assets (e.g. logo, dashboard screenshots)
+├── processed_data/          # Cleaned and merged datasets
+├── scripts/                 # Python scripts for data processing and merging
+├── Airbnb Dashboard.pbix    # Power BI report source file
+├── Report Analysis Airbnb.pdf # Executive PDF report (optional shareable version)
+├── requirements.txt         # Python dependencies
+├── .gitignore
 └── README.md
 
 ```
@@ -137,8 +140,8 @@ However, variables like `last_review` and some geo fields are partially imputed 
 
 This project was developed by:
 
-- [Abigail Masapanta](https://github.com/abbyenredes)
-- [Andrea Alonso](https://github.com/andalons)
-- [Andreina Suescum](https://github.com/mariasuescum)
-- [Yael Parra](https://github.com/Yael-Parra)
+- Abigail Masapanta [GitHub](https://github.com/abbyenredes) [LinkedIn](https://www.linkedin.com/in/abigail-masapanta-romero/)
+- Andrea Alonso [GitHub](https://github.com/andalons) [LinkedIn](https://www.linkedin.com/in/andreaalonsocor/)
+- Andreina Suescum [GitHub](https://github.com/mariasuescum) [LinkedIn](https://www.linkedin.com/in/andreina-suescum/)
+- Yael Parra [GitHub](https://github.com/Yael-Parra) [LinkedIn](https://www.linkedin.com/in/yael-parra/)
 
