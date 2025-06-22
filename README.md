@@ -140,19 +140,13 @@ However, variables like `last_review` and some geo fields are partially imputed 
 We’re open to **collaborations**, **freelance opportunities**, or simply connecting to share ideas and perspectives.  
 🤝 *Let’s connect and explore data possibilities together. Whether it's a creative project or a bold idea, we’d love to hear from you.*
 
-- **Abigail Masapanta**   [![GitHub](https://img.shields.io/badge/GitHub-f56a79?logo=github&logoColor=white)](https://github.com/abbyenredes)  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abigailmasapanta/)
 
-
-- **Andrea Alonso**      [![GitHub](https://img.shields.io/badge/GitHub-f56a79?logo=github&logoColor=white)](https://github.com/andalons) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/andrea-alonso-g/)
-  
-
-- **Andreina Suescum**   [![GitHub](https://img.shields.io/badge/GitHub-f56a79?logo=github&logoColor=white)](https://github.com/mariasuescum)  [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/andreina-suescum/)
- 
-
-- **Yael Parra**         [![GitHub](https://img.shields.io/badge/GitHub-f56a79?logo=github&logoColor=white)](https://github.com/Yael-Parra)   [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yael-parra/)
-  
-  
-
+| Name | GitHub | LinkedIn |
+|------|--------|----------|
+| **Abigail Masapanta** | [![GitHub](https://img.shields.io/badge/GitHub-f56a79?logo=github&logoColor=white)](https://github.com/abbyenredes) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abigailmasapanta/) |
+| **Andrea Alonso** | [![GitHub](https://img.shields.io/badge/GitHub-f56a79?logo=github&logoColor=white)](https://github.com/andalons) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/andrea-alonso-g/) |
+| **Andreina Suescum** | [![GitHub](https://img.shields.io/badge/GitHub-f56a79?logo=github&logoColor=white)](https://github.com/mariasuescum) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/andreina-suescum/) |
+| **Yael Parra** | [![GitHub](https://img.shields.io/badge/GitHub-f56a79?logo=github&logoColor=white)](https://github.com/Yael-Parra) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yael-parra/) |
 
 
 
