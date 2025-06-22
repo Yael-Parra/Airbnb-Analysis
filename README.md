@@ -96,14 +96,14 @@ The final output includes a **Power BI dashboard**, **free-to-deploy with Docker
 
 ```
 Airbnb-Analysis/
-├── data/                    # Raw CSV files per city
-├── eda/                     # Jupyter notebooks for analysis
-├── img/                     # Visual assets (e.g. logo, dashboard screenshots)
-├── processed_data/          # Cleaned and merged datasets
-├── scripts/                 # Python scripts for data processing and merging
-├── Airbnb Dashboard.pbix    # Power BI report source file
-├── Report Analysis Airbnb.pdf # Executive PDF report (optional shareable version)
-├── requirements.txt         # Python dependencies
+├── data/                         # Raw CSV files per city
+├── eda/                          # Jupyter notebooks for analysis
+├── img/                          # Visual assets (e.g. logo, dashboard screenshots)
+├── processed_data/               # Cleaned and merged datasets
+├── scripts/                      # Python scripts for data processing and merging
+├── Airbnb Dashboard.pbix         # Power BI report source file
+├── Report Analysis Airbnb.pdf    # Executive PDF report (optional shareable version)
+├── requirements.txt              # Python dependencies
 ├── .gitignore
 └── README.md
 
