@@ -119,13 +119,17 @@ Airbnb-Analysis/
 ├── data/                         # Raw CSV files per city
 ├── eda/                          # Jupyter notebooks for analysis
 ├── img/                          # Visual assets (e.g. logo, dashboard screenshots)
+├── powerbi-web/
 ├── processed_data/               # Cleaned and merged datasets
 ├── scripts/                      # Python scripts for data processing and merging
-├── Airbnb Dashboard.pbix         # Power BI report source file
-├── Report Analysis Airbnb.pdf    # Executive PDF report (optional shareable version)
-├── requirements.txt              # Python dependencies
+├── .env.example                  # You must change this with your own token
 ├── .gitignore
-└── README.md
+├── Airbnb Dashboard.pbix         # Power BI report source file
+├── Dockerffile
+├── Report Analysis Airbnb.pdf    # Executive PDF report (optional shareable version)
+├── README.md
+├── docker-compose.yaml
+└── requirements.txt              # Python dependenciesREADME.md
 
 ```
 
