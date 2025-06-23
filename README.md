@@ -97,7 +97,7 @@ The final output includes a **Power BI dashboard**, **free-to-deploy with Docker
 In order for you to be able to check the dashboard in the web:
 - Clone the repository in your device
 ```
-git clone https://github.com/Yael-Parra/Airbnb-Analysis.git                 # Better go check at the link
+git clone https://github.com/Yael-Parra/Airbnb-Analysis.git           # Better go check at the link
 cd Airbnb-Analysis
 ```
 - You need to have Docker
