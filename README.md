@@ -91,6 +91,8 @@ The final output includes a **Power BI dashboard**, **free-to-deploy with Docker
 - Served via **Dockerized Nginx**
 - 100% free to deploy locally or in cloud with no Power BI license required
 
+### 🖥️ Architecture Diagram
+![Architecture Diagram](https://media.discordapp.net/attachments/1379054411472699496/1386683211152752752/Pizarron_de_diagrama_de_flujo_en_estilo_de_bloques_de_colores_espaciados_en_azul_oscuro_y_azul_4.png?ex=685a98e0&is=68594760&hm=9aee8d28a7aa059663c9068aaba0ad94f49e7f93472613f593bd9ec43df7e3d9&=&format=webp&quality=lossless&width=1227&height=614)
 ---
 ## ✍ Instructions
 
