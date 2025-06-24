@@ -103,7 +103,7 @@ git clone https://github.com/Yael-Parra/Airbnb-Analysis.git           # Better g
 cd Airbnb-Analysis
 ```
 - You need to have Docker
-- You need to have a Nginx account
+- You need to have a [Ngrok](https://ngrok.com/) account
   - Then you need to put your token as in the .env file example
     
 - Now, run as follows from the root of the project:
